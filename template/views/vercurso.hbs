@@ -1,0 +1,26 @@
+{{>header}}
+<div class="container">
+  <h2>Sistema de control de cursos</h2>
+  <br>
+  <p>Datos del curso</p>
+    <div class="form-group">
+       <div class="row">
+         <label >Descripcion</label>
+         <p>{{descripcion}}</p>
+       </div>
+      <div class="row">
+         <label >Modalidad</label>
+         <p>{{modalidad}}</p>
+       </div>
+       <div class="row">
+         <label >Intensidad horaria: </label>
+         <p>{{intensidad}}</p>
+       </div>
+       <form class="form-group" action="/inscribirse" method="post">
+       <input type="hidden" id="idcurso" name="idcurso" value="{{idcurso}}">
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">Inscribirse</button>
+        </form> 
+    </div>
+     <br>
+</div>
+  {{>footer}}

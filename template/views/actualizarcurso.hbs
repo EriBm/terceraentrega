@@ -1,0 +1,29 @@
+{{>header}}
+<div class="container">
+  <h2>Sistema de control de cursos</h2>
+  <br>
+  <p>Datos del curso</p>
+  <form action="/actualizar" method="post">
+    <div class="form-group">
+      <label >Nombre completo</label>
+      <input type="text"  class="form-control"  name="nombre" value="{{nombre}}" placeholder="Nombre de curso" required><br>
+      <div class="row">
+        <div class="col">
+         <label >ID Curso</label>
+         <input type="number" class="form-control" name="idcurso" value="{{idcurso}}" placeholder="ID del curso" required> 
+       </div>
+       <div class="col">
+         <label >Descripcion</label>
+         <input type="number" class="form-control" name="descripcion" value="{{descripcion}}" placeholder="Descricion" required>
+       </div>
+       <div class="col">
+         <label >Valor</label>
+         <input type="number" class="form-control" name="valor" value="{{valor}}" placeholder="Valor" required>
+       </div>
+     </div>
+     <br>
+     <button class="btn btn-dark">Actualizar</button>
+   </div>
+ </form>	
+</div>
+  {{>footer}}

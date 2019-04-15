@@ -1,0 +1,19 @@
+  
+{{>header}}
+<div class="container">
+  <h2>Sistema de Educación Continua</h2>
+  <br>
+  <p>Iniciar sesion Usuario</p>
+  <form action="/ingresar" method="post">
+    <div class="form-group col-lg-5 col-md-8">
+      <label >Usuario</label>
+      <input type="text"  class="form-control"  name="usuario" placeholder="Nombre de usuario" required><br>   
+      <label >Contraseña</label>
+      <input type="password"  class="form-control"  name="password" placeholder="Contraseña" required><br>
+     <br>
+     <button class="btn btn-primary my-2 my-sm-0">Iniciar Sesion</button>
+   </div>
+ </form>	
+</div>
+  {{>footer}}
+  

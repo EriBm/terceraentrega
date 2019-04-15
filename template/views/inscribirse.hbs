@@ -1,0 +1,24 @@
+  
+{{>header}}
+<div class="container">
+  <h2>Sistema de control de cursos</h2>
+  <br>
+  <p>Incribirse en el curso</p>
+  <form action="/inscribircurso" method="post">
+    <div class="form-group">
+      <label >Documento de identidad</label>
+      <input type="text"  class="form-control"  name="documento" placeholder="Documento de identidad" required><br>
+      <label >Nombre</label>
+      <input type="text"  class="form-control"  name="nombre" placeholder="Nombre completo" required><br>   
+      <label >Correo electronico</label>
+      <input type="text"  class="form-control"  name="correo" placeholder="Correo electronico" required><br>   
+      <label >Telefono</label>
+      <input type="text"  class="form-control"  name="telefono" placeholder="Telefono" required><br>      
+     <br>
+     <input type="hidden" id="idcurso" name="idcurso" value="{{idcurso}}">
+     <button class="btn btn-dark">Inscribirse</button>
+   </div>
+ </form>	
+</div>
+  {{>footer}}
+  
